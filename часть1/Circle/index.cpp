@@ -8,8 +8,11 @@ int main()
 	cout << "Earth" << endl;
 	Circle Earth(6378.1);
 	Circle Line;
+
 	Line.set_the_ference(Earth.get_ference() + 1);
-	double loop = Line.get_radius() - 6378.1;
+
+	double loop = Line.get_radius() - Earth.get_radius();
+
 	cout << "The loop = " << loop << endl;
 	cout << "___________________" << endl;
 
